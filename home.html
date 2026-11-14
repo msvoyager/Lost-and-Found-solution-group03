@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
@@ -12,8 +15,8 @@
         
             <ul class="navitems">
                 <li><a href="">Home</a></li>
-                <li><a href="">Reoprt</a>
-                    <ul class="dropdown">
+                <li><a class="dropdown" href="">Reoprt</a>
+                    <ul class="dropdown-list">
                         <li><a href="">Report lost item</a></li>
                         <li><a href="">Report found item</a></li>
                     </ul>     
@@ -25,11 +28,36 @@
     </section>
 
 
-    <section>
-        <footer>
+   
+        <footer id="footer">
+            <div id="footer_site">
+                <ul>
+                    <li class="footer-title">Site</li>
+                        <ul>
+                            <li>Home</li>
+                            <li>Report</li>
+                            <li>Claim</li>
+                            <li>Contact us</li>
+                        </ul>
+                </ul>
+            </div>
+            <div>
+            <p id="copyright">&copy Copyright 2026 Lost & Found
+                <br>
+               All Right Reserved </p>
+           </div>
 
+            <div id="footer_contact">
+            <ul>
+                <li class="footer-title">Contact us</li>
+                <ul>
+                    <li>0761234567</li>
+                    <li>lostandfound@gmail.com</li>
+                </ul>
+            </ul>
+        </div>
         </footer>
-    </section>
+   
     
 </body>
 </html>

@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-family: "Inter", sans-serif;
 }
 ol, ul {
   list-style: none;
@@ -53,7 +54,7 @@ table {
 }
 .logo{
     font-weight:bold;
-    
+    font-size: larger;
 }
 .navitems{
     font-weight: bold;
@@ -62,20 +63,98 @@ table {
     gap:20px;
 }
 
-.navitems li a{
-    color:#414845;
+.navitems li {
+    position: relative; 
 }
-.dropdown{
-  display: none;
-  position: absolute;
-  top: 100%;     
-  left: 0;
-  background-color: white;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  min-width: 160px;  
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  
+
+.navitems a {
+    text-decoration: none;
+    color: rgb(66, 61, 61);
+    font-size: 16px;
+    padding: 8px 12px;
+    display: block;
+    transition: 0.3s;
 }
+
+.navitems a:hover {
+    color:lightseagreen;
+}
+
+.dropdown-list {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: #333;
+    min-width: 190px;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.dropdown-list li a {
+    padding: 12px 16px;
+    color: white;
+    font-size: 14px;
+    border-bottom: 1px solid lightseagreen;
+}
+
+.dropdown-list li:last-child a {
+    border-bottom: none;
+}
+
+.dropdown-list li a:hover {
+    background-color:lightseagreen;
+    color: rgb(92, 24, 24);
+}
+
+
+.navitems li:hover .dropdown-list {
+    display: block;
+}
+
+
+.navitems button {
+    color: rgb(225, 218, 218);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navitems button:hover {
+    opacity: 0.85;
+}
+#footer {
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  position: fixed;
+  background-color:lightseagreen;
+  color: black;
+  width: 100%; 
+  display: flex;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+
+.footer-title{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+#footer_site ul ul {
+    padding-left: 15px;
+}
+#footer_contact ul ul {
+    padding-left: 15px;
+}
+#copyright{
+    text-align: center; 
+}
+
 
